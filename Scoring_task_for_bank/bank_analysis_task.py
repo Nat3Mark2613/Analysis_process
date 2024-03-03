@@ -63,7 +63,7 @@ Viewing unique values of a categorical feature"""
 for col in bank_df.select_dtypes('object'):
   print(bank_df[col].unique())
 
-"""Заменяем заголовки (приводим к нижнему регистру)"""
+"""We replace headers (convert to lowercase)"""
 
 bank_df.columns = bank_df.columns.str.lower()
 bank_df.columns
